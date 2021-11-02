@@ -1,4 +1,7 @@
 # Starter pipeline
+- task: IISWebAppDeploymentOnMachineGroup@0
+  inputs:
+    Package: '$(System.DefaultWorkingDirectory)\**\*.zip'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
